@@ -168,6 +168,50 @@ Config.DeliveryLocations = {
         ["label"] = "Bahama Mamas",
 	["coords"] = vector3(-1383.1, -639.99, 28.67),
     },
+    [6] = {
+        ["label"] = "La Fuente Blanca",
+	["coords"] = vector3(1395.45, 1141.8, 114.64),
+    },
+    [7] = {
+        ["label"] = "You Tool Hardware",
+	["coords"] = vector3(2685.45, 3515.3, 53.3),
+    },
+    [8] = {
+        ["label"] = "Altruist Cult",
+	["coords"] = vector3(-1101.66, 4940.89, 218.35),
+    },
+    [9] = {
+        ["label"] = "Chicken Factory",
+	["coords"] = vector3(-68.24, 6253.72, 31.09),
+    },
+    [10] = {
+        ["label"] = "Humane Labs",
+	["coords"] = vector3(3595.4, 3705.1, 29.69),
+    },
+    [11] = {
+        ["label"] = "Weed Farm",
+	["coords"] = vector3(2221.96, 5614.78, 54.9),
+    },
+    [12] = {
+        ["label"] = "Sandy LakeSide",
+	["coords"] = vector3(711.24, 4185.33, 41.08),
+    },
+    [13] = {
+        ["label"] = "OceanFront House",
+	["coords"] = vector3(-2588.0, 1910.94, 167.5),
+    },
+    [14] = {
+        ["label"] = "Observatory",
+	["coords"] = vector3(-429.53, 1109.47, 327.68),
+    },
+    [15] = {
+        ["label"] = "Bulgeco Shippins Service",
+	["coords"] = vector3(-862.64, -2718.19, 13.94),
+    },
+    [16] = {
+        ["label"] = "Los Santos Tattoos",
+	["coords"] = vector3(1320.01, -1662.21, 51.24),
+    },
 }
 
 Config.CornerSellingZones = {
