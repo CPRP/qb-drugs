@@ -84,7 +84,7 @@ local function toFarAway()
 end
 
 local function callPolice(coords)
-    TriggerServerEvent('police:server:policeAlert', 'Drug sale in progress')
+    exports['qb-dispatch']:SuspisiousHandoff()
     hasTarget = false
     Wait(5000)
 end
