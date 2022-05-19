@@ -84,7 +84,7 @@ local function toFarAway()
 end
 
 local function callPolice(coords)
-    exports['qb-dispatch']:SuspisiousHandoff()
+    exports['ps-dispatch']:SuspisiousHandoff()
     hasTarget = false
     Wait(5000)
 end
