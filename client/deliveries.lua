@@ -372,7 +372,7 @@ function doPoliceAlert()
     if street2 ~= nil then
         streetLabel = streetLabel .. " " .. street2
     end
-    exports['qb-dispatch']:DrugSale()
+    exports['ps-dispatch']:DrugSale()
 end
 
 RegisterNetEvent('qb-drugs:client:robberyCall', function(msg, streetLabel, coords)
