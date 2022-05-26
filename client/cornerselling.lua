@@ -80,11 +80,18 @@ local function toFarAway()
     Wait(5000)
 end
 
-local function callPolice(coords)
-    exports['ps-dispatch']:SuspisiousHandoff()
-    hasTarget = false
-    Wait(5000)
-end
+-- local function callPolice(coords)
+--     if not AlertSend then
+--         exports['ps-dispatch']:DrugSale()
+--         AlertSend = true
+--         SetTimeout(math.random(3000,6000), function()
+--             AlertSend - false
+--         end)
+--     end
+--     -- TriggerServerEvent('police:server:policeAlert', 'Drug sale in progress')
+--     hasTarget = false
+--     Wait(5000)
+-- end
 
 local function SellToPed(ped)
     hasTarget = true
@@ -105,7 +112,7 @@ local function SellToPed(ped)
         hasTarget = false
         return
     elseif succesChance >= 19 then
-        callPolice()
+        exports['ps-dispatch']:DrugSale()
         return
     end
 
