@@ -337,19 +337,6 @@ function InitZones()
     end
 end
 
-function doPoliceAlert()
-    local ped = PlayerPedId()
-    local pos = GetEntityCoords(ped)
-    local s1, s2 = GetStreetNameAtCoord(pos.x, pos.y, pos.z)
-    local street1 = GetStreetNameFromHashKey(s1)
-    local street2 = GetStreetNameFromHashKey(s2)
-    local streetLabel = street1
-    if street2 ~= nil then
-        streetLabel = streetLabel .. " " .. street2
-    end
-    exports['ps-dispatch']:DrugSale()
-end
-
 RegisterNetEvent('qb-drugs:client:RefreshDealers', function(DealerData)
     if not Config.UseTarget and dealerCombo then dealerCombo:destroy() end
     Config.Dealers = DealerData
@@ -452,32 +439,3 @@ RegisterNetEvent('qb-drugs:client:sendDeliveryMail', function(type, deliveryData
         })
     end
 end)
-
--- RegisterNetEvent('qb-drugs:client:CreateDealer', function(dealerName, minTime, maxTime)
---     local ped = PlayerPedId()
---     local loc = GetEntityCoords(ped)
---     local DealerData = {
---         name = dealerName,
---         time = {
---             min = minTime,
---             max = maxTime,
---         },
---         pos = {
---             x = loc.x,
---             y = loc.y,
---             z = loc.z,
---         }
---     }
-
---     TriggerServerEvent('qb-drugs:server:CreateDealer', DealerData)
--- end)
-
--- RegisterNetEvent('qb-drugs:client:RefreshDealers', function(DealerData)
---     Config.Dealers = DealerData
--- end)
-
--- RegisterNetEvent('qb-drugs:client:GotoDealer', function(DealerData)
---     local ped = PlayerPedId()
---     SetEntityCoords(ped, DealerData["coords"]["x"], DealerData["coords"]["y"], DealerData["coords"]["z"])
---     QBCore.Functions.Notify(Lang:t("success.teleported_to_dealer", {dealerName = DealerData["name"]}), 'success')
--- end)
