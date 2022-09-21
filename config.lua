@@ -1,7 +1,7 @@
 Config = Config or {}
 Config.Dealers = {}
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
-Config.PoliceCallChance = 100
+Config.PoliceCallChance = 75
 
 -- Shop Config
 Config.Products = {
@@ -222,12 +222,12 @@ Config.DrugsPrice = {
         max = 55,
     },
     ["crack_baggy"] = {
-        min = 35,
-        max = 65,
+        min = 200,
+        max = 300,
     },
     ["cokebaggy"] = {
-        min = 35,
-        max = 65,
+        min = 200,
+        max = 300,
     },
     ["meth"] = {
         min = 35,
