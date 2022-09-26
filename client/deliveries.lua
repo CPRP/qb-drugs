@@ -169,8 +169,8 @@ local function DeliveryTimer()
 end
 
 local function PoliceCall()
-    if Config.PoliceCallChance <= math.random(1, 100) then
-        -- TriggerServerEvent('police:server:policeAlert', 'Suspicous activity')
+    local chance = math.random(1, 100)
+    if chance >= 25 then
         exports['ps-dispatch']:DrugSale()
     end
 end
