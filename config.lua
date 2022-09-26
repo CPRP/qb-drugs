@@ -1,7 +1,7 @@
 Config = Config or {}
 Config.Dealers = {}
 Config.UseTarget = GetConvar('UseTarget', 'false') == 'true'
-Config.PoliceCallChance = 100
+Config.PoliceCallChance = 75
 
 -- Shop Config
 Config.Products = {
