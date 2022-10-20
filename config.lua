@@ -182,7 +182,7 @@ Config.Products = {
 Config.SuccessChance = 50
 Config.ScamChance = 25
 Config.RobberyChance = 25
-Config.MinimumDrugSalePolice = 0
+Config.MinimumDrugSalePolice = 1
 
 Config.CornerSellingDrugsList = {
     "weed_white-widow",
@@ -193,7 +193,8 @@ Config.CornerSellingDrugsList = {
     "weed_ak47",
     "crack_baggy",
     "cokebaggy",
-    "meth"
+    "meth",
+    "m-moonshine"
 }
 
 Config.DrugsPrice = {
@@ -232,6 +233,10 @@ Config.DrugsPrice = {
     ["meth"] = {
         min = 35,
         max = 65,
+    },
+    ["m-moonshine"] = {
+        min = 100,
+        max = 200,
     },
 }
 
